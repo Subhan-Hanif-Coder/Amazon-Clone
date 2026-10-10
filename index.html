@@ -1,521 +1,294 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subhan Haneef - My Online Store</title>
-    <meta name="description" content="E-commerce portfolio website created by Subhan Haneef" />
-    <meta name="google-site-verification" content="PWQSsU83v5uMnudSuGgA8U8yBJojryKQEIbxbpPK47s" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <script
-      src="https://kit.fontawesome.com/fac4f1925e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="nav-logo">
-          <div class="logo"></div>
+    <!-- Main Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="Hero.png" alt="Store Logo">
+        </a>
+
+        <div class="delivery">
+            <span>Deliver to</span>
+            <strong>Pakistan</strong>
         </div>
 
-        <div class="nav-address">
-          <p class="add-first">Deliver to</p>
-          <div class="add-icon">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="add-second">Pakistan</p>
-          </div>
-        </div>
-        <div class="search">
-          <select class="nav-select">
-            <option>All</option>
-          </select>
-          <input type="text" placeholder="search Amazon" class="nav-input" />
-          <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </div>
-
-        <div class="flag-select">
-          <i class="fa-solid fa-flag"></i>
-          <select class="flag">
-            <option>EN</option>
-            <option>UR</option>
-          </select>
-        </div>
-
-        <div class="sign-in">
-          <p class="sign-first">Hello, Sign in</p>
-
-          <div class="account">
-            <select class="lists">
-              <option>Account & Lists</option>
+        <form class="search-bar" action="#">
+            <select aria-label="Select category">
+                <option>All</option>
+                <option>Home</option>
+                <option>Fashion</option>
+                <option>Electronics</option>
             </select>
-          </div>
-        </div>
+            <input type="search" placeholder="Search products..." aria-label="Search products">
+            <button type="submit" aria-label="Search">⌕</button>
+        </form>
 
-        <div class="returns">
-          <p class="return-first">Returns</p>
-          <p class="return-second">& Orders</p>
-        </div>
+        <a href="#" class="nav-item language">EN</a>
 
-        <div class="add-to-cart">
-          <i class="fa-solid fa-shopping-cart"></i>
-          <p class="basket">Add to Cart</p>
-        </div>
-      </div>
+        <a href="#" class="nav-item account">
+            <span>Hello, sign in</span>
+            <strong>Account & Lists</strong>
+        </a>
 
-      <!-- Bottom navbar -->
-      <div class="bottom-nav">
-    <div class="humbger">
-      <i class="fa-solid fa-bars"></i>
-      <p>All</p>
-    </div>
-    <div class="spans">
-      <span class="span1">Today deal's</span>
-      <span class="span1">Prime Video</span>
-      <span class="span2">Customer Service</span>
-      <span class="span3">Gift Cards</span>
-      <span class="span4">Registry</span>
-      <span class="span5">Sell</span>
-    </div>
+        <a href="#" class="nav-item orders">
+            <span>Returns</span>
+            <strong>& Orders</strong>
+        </a>
 
-        </div>
-      </div>
+        <a href="#" class="cart">
+            🛒 <strong>Cart</strong>
+        </a>
     </header>
-<div class="hero-sec"></div>
-<section class="shop-section">
-<!-- Box 1 -->
-  <div class="shop-box">
-    <h2>Get your game on </h2>
-    <div class="box-images">
-      <img src="./beddind-bath.png" alt="">
-      <img src="./cooking.png" alt="">
-      <img src="./Decor.png" alt="">
-      <img src="./home-improvement.png" alt="">
-      
-    </div>
-  </div>
 
+    <!-- Mobile Hamburger Menu -->
+    <input type="checkbox" id="menu-toggle">
 
-  <!-- box 2 -->
-   <div class="shop-box">
-    <h2>Must for every student </h2>
-    <div class="box-images">
-      <img src="./accent.png" alt="">
-      <img src="./basket.png" alt="">
-      <img src="./building.png" alt="">
-      <img src="./cooking.png" alt="">
-      
-    </div>
-  </div>
+    <nav class="sub-navbar">
+        <label for="menu-toggle" class="hamburger">
+            <span>☰</span> All
+        </label>
 
+        <a href="#deals">Today's Deals</a>
+        <a href="#products">Customer Service</a>
+        <a href="#products">Registry</a>
+        <a href="#products">Gift Cards</a>
+        <a href="#products">Sell</a>
+    </nav>
 
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">DISCOVER MORE</span>
+                <h1>Find Everything You Love</h1>
+                <p>Explore amazing products for your home, lifestyle and everyday needs.</p>
+                <a href="#products" class="shop-btn">Shop Now →</a>
+            </div>
+        </section>
 
-   <div class="shop-box">
-    <h2>Girs favourite items </h2>
-    <div class="box-images">
-      <img src="./dresses.png" alt="">
-      <img src="./hardware.png" alt="">
-      <img src="./home-improvement.png" alt="">
-      <img src="./Decor.png" alt="">
-      
-    </div>
-  </div>
+        <!-- Categories -->
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">EXPLORE OUR COLLECTION</span>
+                    <h2>Shop by Category</h2>
+                </div>
+                <a href="#products" class="view-all">Explore all →</a>
+            </div>
 
+            <div class="product-grid">
 
+                <article class="product-card">
+                    <img src="beddind-bath.png" alt="Bedding and bath">
+                    <h3>Bedding & Bath</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="cooking.png" alt="Cooking products">
+                    <h3>Cooking Essentials</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="Decor.png" alt="Home decor">
+                    <h3>Home Decor</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="home-improvement.png" alt="Home improvement">
+                    <h3>Home Improvement</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="accent.png" alt="Home accents">
+                    <h3>Home Accents</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-   <div class="shop-box">
-    <h2>Men's favourite items </h2>
-    <div class="box-images">
-      <img src="./knite.png" alt="">
-      <img src="./jewerly.png" alt="">
-      <img src="./jacket.png" alt="">
-      <img src="./makeup.png" alt="">
-      
-    </div>
-  </div>
+                <article class="product-card">
+                    <img src="basket.png" alt="Storage baskets">
+                    <h3>Storage & Baskets</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="building.png" alt="Building products">
+                    <h3>Building Supplies</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="dresses.png" alt="Dresses">
+                    <h3>Fashion & Dresses</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="hardware.png" alt="Hardware">
+                    <h3>Hardware</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="knite.png" alt="Knitting supplies">
+                    <h3>Knitting Supplies</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="jewerly.png" alt="Jewelry">
+                    <h3>Jewelry</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-   <div class="shop-box">
-    <h2>Its shopping time </h2>
-    <div class="box-images">
-      <img src="./sponges.png" alt="">
-      <img src="./rides.png" alt="">
-      <img src="./swimming.png" alt="">
-      <img src="./doll.png" alt="">
-      
-    </div>
-  </div>
+                <article class="product-card">
+                    <img src="jacket.png" alt="Jackets">
+                    <h3>Jackets & Coats</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="makeup.png" alt="Makeup products">
+                    <h3>Beauty & Makeup</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="sponges.png" alt="Cleaning sponges">
+                    <h3>Cleaning Supplies</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="rides.png" alt="Ride-on toys">
+                    <h3>Ride-on Toys</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="swimming.png" alt="Swimming products">
+                    <h3>Swimming</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="doll.png" alt="Dolls and toys">
+                    <h3>Dolls & Toys</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
+                <article class="product-card">
+                    <img src="handbags.png" alt="Handbags">
+                    <h3>Handbags</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-   <div class="shop-box">
-    <h2>Get scholl items </h2>
-    <div class="box-images">
-      <img src="./sponges.png" alt="">
-      <img src="./hardware.png" alt="">
-      <img src="./handbags.png" alt="">
-      <img src="./backpaks.png" alt="">
-      
-    </div>
-  </div>
+                <article class="product-card">
+                    <img src="backpaks.png" alt="Backpacks">
+                    <h3>Backpacks</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-  <!-- box3 -->
-   <div class="shop-box">
-    <h2>Come in the gym </h2>
-    <div class="box-images">
-      <img src="./gym.png" alt="">
-      <img src="./headphone.png" alt="">
-      <img src="./trackers.png" alt="">
-      <img src="./doll.png" alt="">
-      
-    </div>
-  </div>
+                <article class="product-card">
+                    <img src="gym.png" alt="Fitness products">
+                    <h3>Fitness & Gym</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-  <!-- box4 -->
-   <div class="shop-box">
-    <h2>Be a profeesional look</h2>
-    <div class="box-images">
-      <img src="./deals.png" alt="">
-      <img src="./books.png" alt="">
-      <img src="./Monitors.png" alt="">
-      <img src="./rides.png" alt="">
-      
-    </div>
-  </div>
+                <article class="product-card">
+                    <img src="headphone.png" alt="Headphones">
+                    <h3>Headphones</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-</section>
+                <article class="product-card">
+                    <img src="trackers.png" alt="Fitness trackers">
+                    <h3>Fitness Trackers</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-<!-- log in section -->
- <section class="login-section">
-  <div class="log-sec">
-    <h2 class="log-sec-heading">See personalized recommendations</h2>
-    <button class="signin-btn">Sign in</button>
-    <div class="newcustomer">
-      <p>New Customer?</p>
-      <a href="" class="log-ankle">Start here</a>
-    </div>
-  </div>
- </section>
- <div class="back-top">
-  Back to Top
- </div>
-      
+                <article class="product-card" id="deals">
+                    <img src="deals.png" alt="Special deals">
+                    <h3>Special Deals</h3>
+                    <a href="#products">Shop deals →</a>
+                </article>
 
- <!-- foter -->
-  <footer class="footer">
+                <article class="product-card">
+                    <img src="books.png" alt="Books">
+                    <h3>Books</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-    <div class="footer-container">
+                <article class="product-card">
+                    <img src="Monitors.png" alt="Computer monitors">
+                    <h3>Monitors & Tech</h3>
+                    <a href="#products">Explore now →</a>
+                </article>
 
-        <div class="footer-column">
-            <h3>Get to Know Us</h3>
+            </div>
+        </section>
 
-            <a href="#">Careers</a>
-            <a href="#">Blog</a>
-            <a href="#">About Us</a>
-            <a href="#">Investor Relations</a>
-            <a href="#">Our Devices</a>
-            <a href="#">Science</a>
+        <!-- Promotional Banner -->
+        <section class="promo-banner">
+            <div>
+                <span>YOUR NEXT FAVORITE FIND</span>
+                <h2>Upgrade Your Everyday</h2>
+                <p>Discover useful products for every corner of your life.</p>
+            </div>
+            <a href="#products" class="shop-btn">Explore Collection →</a>
+        </section>
+    </main>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">Back to top ↑</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Get to Know Us</h3>
+                <a href="#products">About Us</a>
+                <a href="#products">Our Story</a>
+                <a href="#products">Careers</a>
+            </div>
+
+            <div>
+                <h3>Make Money with Us</h3>
+                <a href="#products">Sell Products</a>
+                <a href="#products">Become a Partner</a>
+                <a href="#products">Affiliate Program</a>
+            </div>
+
+            <div>
+                <h3>Customer Service</h3>
+                <a href="#products">Help Center</a>
+                <a href="#products">Your Account</a>
+                <a href="#products">Returns</a>
+            </div>
+
+            <div>
+                <h3>Connect with Us</h3>
+                <a href="#products">Facebook</a>
+                <a href="#products">Instagram</a>
+                <a href="#products">Contact Us</a>
+            </div>
         </div>
 
-
-        <div class="footer-column">
-            <h3>Make Money with Us</h3>
-
-            <a href="#">Sell products</a>
-            <a href="#">Sell on Business</a>
-            <a href="#">Sell apps</a>
-            <a href="#">Become an Affiliate</a>
-            <a href="#">Advertise Your Products</a>
-            <a href="#">Self-Publish with Us</a>
-            <a href="#">Host an Amazon Hub</a>
-            <a href="#">› See More</a>
+        <div class="footer-bottom">
+            <img src="Hero.png" alt="Store Logo">
+            <p>© 2026 Online Store. All rights reserved.</p>
         </div>
+    </footer>
 
-
-        <div class="footer-column">
-            <h3>Amazon Payment Products</h3>
-
-            <a href="#">Amazon Business Card</a>
-            <a href="#">Shop with Points</a>
-            <a href="#">Reload Your Balance</a>
-            <a href="#">Amazon Currency Converter</a>
-        </div>
-
-
-        <div class="footer-column">
-            <h3>Let Us Help You</h3>
-
-            <a href="#">Your Account</a>
-            <a href="#">Your Orders</a>
-            <a href="#">Shipping Rates & Policies</a>
-            <a href="#">Returns & Replacements</a>
-            <a href="#">Manage Your Content and Devices</a>
-            <a href="#">Help</a>
-        </div>
-
-    </div>
-
-</footer>
-
-<div class="footer-bottom">
-
-    <div class="footer-logo">
-        <img src="./Hero.png" alt="" class="logo">
-    </div>
-
-    <div class="footer-options">
-
-        <div class="option">
-            🌐
-            <span>English</span>
-            <span>⌃</span>
-        </div>
-
-        <div class="option">
-            <span>PKR</span>
-            <span>Pakistani Rupee</span>
-        </div>
-
-        <div class="option">
-            🇺🇸
-            <span>United States</span>
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- footer-2 -->
-
-<footer class="footer-2">
-  <div class="footer-2-container">
-    
-
-<div class="footer-2-column">
-
-  <div class="footer-2-item">
-      <h3>Amazon Music</h3>
-      <p>Stream millions of songs</p>
-    </div>
-
-    <div class="footer-2-item">
-      <h3>Amazon Bussiness</h3>
-      <p>Everything For Your Bussniess</p>
-    </div>
-
-<div class="footer-2-item">
-    <h3>IMDbPro</h3>
-    <p>Get Info Entertainment Professionals Need</p>
-</div>
-
-
-</div>
-
-
-
-
-<!-- column 2 -->
-<div class="footer-2-column">
-
-    <div class="footer-2-item">
-        <h3>Amazon Ads</h3>
-        <p>Reach customers wherever they spend their time</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>AmazonGlobal</h3>
-        <p>Ship Orders Internationally</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>Kindle Direct Publishing</h3>
-        <p>Indie Digital & Print Publishing Made Easy</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>eero WiFi</h3>
-        <p>Stream 4K Video in Every Room</p>
-    </div>
-
-</div>
-
-<!-- column 3 -->
- <div class="footer-2-column">
-
-    <div class="footer-2-item">
-        <h3>Amazon Ads</h3>
-        <p>Reach customers wherever they spend their time</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>AmazonGlobal</h3>
-        <p>Ship Orders Internationally</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>Kindle Direct Publishing</h3>
-        <p>Indie Digital & Print Publishing Made Easy</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>eero WiFi</h3>
-        <p>Stream 4K Video in Every Room</p>
-    </div>
-
-</div>
-
-
-
-
-<!-- column 4 -->
- <div class="footer-2-column">
-
-    <div class="footer-2-item">
-        <h3>Amazon Ads</h3>
-        <p>Reach customers wherever they spend their time</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>AmazonGlobal</h3>
-        <p>Ship Orders Internationally</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>Kindle Direct Publishing</h3>
-        <p>Indie Digital & Print Publishing Made Easy</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>eero WiFi</h3>
-        <p>Stream 4K Video in Every Room</p>
-    </div>
-
-</div>
-
-
-<!-- column-5 -->
- <div class="footer-2-column">
-
-    <div class="footer-2-item">
-        <h3>Amazon Ads</h3>
-        <p>Reach customers wherever they spend their time</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>AmazonGlobal</h3>
-        <p>Ship Orders Internationally</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>Kindle Direct Publishing</h3>
-        <p>Indie Digital & Print Publishing Made Easy</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>eero WiFi</h3>
-        <p>Stream 4K Video in Every Room</p>
-    </div>
-
-</div>
-
-<!-- column-6 -->
- <div class="footer-2-column">
-
-    <div class="footer-2-item">
-        <h3>Amazon Ads</h3>
-        <p>Reach customers wherever they spend their time</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>AmazonGlobal</h3>
-        <p>Ship Orders Internationally</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>Kindle Direct Publishing</h3>
-        <p>Indie Digital & Print Publishing Made Easy</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>eero WiFi</h3>
-        <p>Stream 4K Video in Every Room</p>
-    </div>
-
-</div>
-
-
-<!-- column-7 -->
-<div class="footer-2-column">
-
-    <div class="footer-2-item">
-        <h3>Amazon Ads</h3>
-        <p>Reach customers wherever they spend their time</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>AmazonGlobal</h3>
-        <p>Ship Orders Internationally</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>Kindle Direct Publishing</h3>
-        <p>Indie Digital & Print Publishing Made Easy</p>
-    </div>
-
-    <div class="footer-2-item">
-        <h3>eero WiFi</h3>
-        <p>Stream 4K Video in Every Room</p>
-    </div>
-
-</div>
-
-
-
-  </div>
-</footer>
-    
-
-<!-- footer-3 -->
-<footer class="footer-3">
-  <div class="footer-3-container">
-    <div class="footer-links">
-      <a href="#" class="footer-link">Conditions of Use</a>
-<a href="#" class="footer-link">Privacy Notice</a>
-<a href="#" class="footer-link">Consumer Health Data Privacy Disclosure</a>
-<a href="#" class="footer-link privacy-link">
-Your Ads Privacy Choices
-<!-- SVG Toggle Icon -->
-<svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="24" height="12" rx="6" fill="#0073e6"/>
-<circle cx="6" cy="6" r="4" fill="white"/>
-</svg>
-</a>
-    </div>
-    <p class="copyright-text">
-  &copy; 1996-2026, Amazon.com, Inc. or its affiliates
-</p>
-  </div>
-</footer>
-
-
-
-
-  </body>
+</body>
 </html>
